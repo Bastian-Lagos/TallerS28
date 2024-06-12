@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 @Entity
@@ -17,4 +18,7 @@ public class Location {
     private String name;
     private String residents_length;
     private String url;
+
+    @OneToMany(mappedBy = "location")
+    private Characters character;
 }
