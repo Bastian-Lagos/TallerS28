@@ -1,5 +1,6 @@
 package com.example.TallerS28.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -30,5 +31,5 @@ public class Episode {
         joinColumns = @JoinColumn(name="episode_id"),
         inverseJoinColumns = @JoinColumn(name = "character_id")
     )
-    private List<Characters> character_id;
+    private List<Characters> presentCharacters = new ArrayList<>();
 }
