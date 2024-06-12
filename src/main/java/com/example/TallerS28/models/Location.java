@@ -18,7 +18,4 @@ public class Location {
     private String name;
     private String residents_length;
     private String url;
-
-    @OneToMany(mappedBy = "location")
-    private Characters character;
 }

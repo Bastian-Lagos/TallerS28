@@ -16,7 +16,4 @@ public class User {
     private String universe;
     private String password;
     private Roles role;
-
-    @OneToMany(mappedBy = "user")
-    private Characters character;
 }
